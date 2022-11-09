@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Graveyard 2077</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    
+
+    <div class="info" style="white-space:pre">
+       total plots: 15 
+       plots available: 
+       visitors online: <span id="user-count"></span>
+       
+    </div>
+
+
+    <h1>Neon Graveyard 2077</h1>
+    <h3>pick a plot for someone and party with everyone</h3>
+    <div class="msg-container">
+        <input type="text" class="input-name" id="name-input" placeholder="Name" />
+        <input type="text" class="input-msg" id="msg-input" placeholder="Message" />
+        <input type="text" class="input-plot" id="plot-input" placeholder="Plot#" />
+        <button id="send-button">Submit</button>
+    </div>
+
+    <canvas id='c' style='position:absolute; left:0px; top:0px;'></canvas>
+   
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>   
+    <script src="app.js"></script>
+</body>
+</html>
